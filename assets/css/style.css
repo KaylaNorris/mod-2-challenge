@@ -111,7 +111,7 @@ p {
 }
 
 #my-work {
-    display: inline-flex;
+    display: flex;
     align-items:flex-start;
     padding: 50px 50px 0px 50px;
     flex-direction: row;
@@ -125,14 +125,26 @@ p {
     margin-left: 15px;
 }
 
+.first-app {
+    display: flex;
+    margin-left: 200px;
+}
+
 .first-app img {
     margin-left:45px ;
     max-width: 700px;
 }
+
+.apps {
+    display: flex;
+    justify-content: center;
+    margin-left: 300px;
+    margin-bottom: 30px;
+    padding: 50 50px;
+}
    
 
 .apps img {
-    
     max-width: 400px;
     max-height: 400px;
 }
