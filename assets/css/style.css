@@ -1,0 +1,117 @@
+:root {
+    --blue: rgb(154, 203, 246);
+    --white: #ffffff;
+    --purple: rgba(219, 124, 226, 0.6);
+}
+
+body {
+    background-color: rgb(245, 240, 234);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* header with name and nav links*/
+header {
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+h1 {
+    display: inline-flex;
+    font-size: 50px;
+    margin-left: 20px;
+}
+
+header nav {
+    float: right;
+    padding-top: 35px;
+    margin-right: 20px;
+    margin-left: 20px;
+    font size: 25px
+}
+
+/* links with no underline and space between*/
+header nav ul li {
+    list-style-type: none;
+    display: inline-flex;
+    padding: 10px;
+}
+
+a {
+    color: var(--white);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/*profile pic and text block*/
+.subheader {
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    background-image: linear-gradient(to bottom right,var(--blue),var(--purple));
+    background-size: cover;
+}
+
+#profile-pic {
+    height: 400px;
+    width: 250px;
+    padding: 15px;
+    margin-left: 10px;
+}
+
+/*text block that reads 'Full Stack Web Developer'*/
+#header-caption {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--blue);
+    color: var(--white);
+    padding-right: 10px;
+}
+
+.subheader p {
+    color: var(--white);
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+#about-me {
+    display: inline-flex;
+    /*justify-content: space-around;
+    align-items: center;*/
+    padding: 50px;
+}
+
+h2 {
+    color: var(--purple);
+    font-size: 45px;
+    padding: 25px;
+}
+
+/*vertical line between h2 and p*/
+.about-me-vl {
+    border-left: 6px solid var(--purple);
+    height: 300px;
+}
+
+p {
+    color: var(--purple);
+    padding: 20px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+#my-work {
+    display: inline-flex;
+    padding: 50px;
+}
+
+.my-work-vl {
+    border-left: 6px solid var(--purple);
+    height: 500px;
+}
+
+.first-app img {
+    margin-left: ;
+    max-width: max-content;
+    max-height: max-content;
+}

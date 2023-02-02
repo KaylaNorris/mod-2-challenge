@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Kayla Norris's Portfolio</title>
 </head>
 
@@ -25,20 +25,21 @@
         </nav>
     </header>
 
-    <!--Images under header/nav-->
-    <figure>
+    <!--Image under main header&nav with text block-->
+    <div class="subheader">
         <img src="assets/images/profile-pic.jpg" alt="Profile Image" id="profile-pic">
-    </figure>
-    <figure>
-        <img src="assets/images/ insert hero image >" alt="Blue Abstract Art" id="background">
-    </figure>
+        <div id="header-caption">
+            <p>Full Stack Web Developer</p>
+        </div>
+    </div>
     
     
     <!-- main section -->
     <main>
-    <!-- id to link to nav elements-->    
+    <!-- id to link to nav elements class for vertical line-->    
         <section id="about-me">
             <h2>About Me</h2>
+            <div class="about-me-vl"></div>
             <p>
              I was born in Germany but raised in Columbus, Ohio (GO BUCKS!)<br>
              I have a background in Veterinary Technology and Life Insurance Sales.<br> 
@@ -51,6 +52,7 @@
     <!-- id to link nav elements -->
         <section id="my-work">
             <h2>My Work</h2>
+            <div class="my-work-vl"></div>
             <!-- larger than the rest first div class for  -->
                 <div class="first-app">
                     <img src="assets/images/bio-page-screenshot.png" alt="Screenshot of Kayla Norris's bio page application">
