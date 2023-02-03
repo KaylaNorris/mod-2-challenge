@@ -84,10 +84,16 @@ nav a {
     padding: 5px 10px;
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 #about-me {
-    display: inline-flex;
-    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding: 50px;
 }
 
@@ -101,10 +107,14 @@ h2 {
 .about-me-vl {
     border-left: 6px solid var(--purple);
     height: 300px;
-}
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+} 
 
-p {
+.about-me-p {
     color: var(--purple);
+    font-size: 20px;
     padding: 20px;
     margin-left: 30px;
     margin-bottom: 10px;
@@ -116,11 +126,35 @@ p {
     padding: 50px 50px 0px 50px;
     flex-direction: row;
     flex-wrap: wrap;
-    /*padding: 50px;*/
+    align-items: center;
+    padding: 50px 50px 50px 50px;
 }
+
+#my-work h2 {
+    margin-top: -700px;
+}
+
 
 .my-work-vl {
     border-left: 6px solid var(--purple);
+    feature/add-css
+    height: 1500px;
+    margin-left: 55px;
+    /* aligns screenshots */
+    margin-right: -100px;
+}
+
+/* .screenshots {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+} */
+
+.first-app {
+    margin-left: 175px;
+    /* margin-top: -500px; */
+    border: solid 5px var(--blue);
     height: 1000px;
     margin-left: 15px;
 }
@@ -131,7 +165,7 @@ p {
 }
 
 .first-app img {
-    margin-left:45px ;
+    /* margin-left:500px; */
     max-width: 700px;
 }
 
@@ -141,6 +175,17 @@ p {
     margin-left: 300px;
     margin-bottom: 30px;
     padding: 50 50px;
+}
+   
+.apps {
+    /* margin-left: 370px; */
+    /* margin-top: -500px; */
+    /* margin-bottom: 30px; */
+    flex: 4;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+    border: solid 5px var(--blue);
 }
    
 
@@ -168,6 +213,12 @@ p {
         padding-right: 10px;
 }
 
+.text-block p {
+    color: var(--purple);
+    font-weight: bold;
+    padding: 5px;
+}
+
 /*Screenshot caption titles in text box*/
 h3 {
     font-size: 20px;
@@ -186,3 +237,92 @@ h3 {
     margin: -10px 5px 0px 5px;
     text-align: right;
 }
+
+#contact-me {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+#contact-me h2 {
+    font-size: 35px;
+}
+
+.contact-me-vl {
+    border-left: 6px solid var(--purple);
+    height: 200px;
+    margin-left: 37px;
+    margin-right: 60px;
+}
+
+#contact-me ul li {
+    list-style-type: none;
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+#contact-me a {
+    color: var(--purple);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.contacts {
+    padding-top: 35px;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 25px
+}
+
+footer {
+    background-color: var(--blue);
+    color: var(--white);
+    text-align: center;
+    width: 100%;
+    height: 50px;
+}
+
+h4 {
+    padding: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .my-work-vl {
+     rotate: 90deg;
+     height: 300px;
+     margin-top: -500px;
+    }
+
+    .about-me-vl {
+        rotate: 90deg;
+        margin-top: 25px;
+        margin-left: -3px;
+    }
+
+    .contact-me-vl {
+        rotate: 90deg;
+        margin-top: 40px;
+        margin-left: -50px;
+    }
+
+
+    #work-title {
+        margin-top: 600px;
+    }
+
+    .first-app {
+        margin-top: -500px;
+        margin-left: 0;
+    }
+
+  } 
+
+/* @media screen and (max-width: 768px) {
+  main {
+        flex-direction:column;
+    }
+  } */
+
