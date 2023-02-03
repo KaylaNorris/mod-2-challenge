@@ -122,6 +122,8 @@ h2 {
 
 #my-work {
     display: flex;
+    align-items:flex-start;
+    padding: 50px 50px 0px 50px;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
@@ -135,6 +137,7 @@ h2 {
 
 .my-work-vl {
     border-left: 6px solid var(--purple);
+    feature/add-css
     height: 1500px;
     margin-left: 55px;
     /* aligns screenshots */
@@ -152,11 +155,26 @@ h2 {
     margin-left: 175px;
     /* margin-top: -500px; */
     border: solid 5px var(--blue);
+    height: 1000px;
+    margin-left: 15px;
+}
+
+.first-app {
+    display: flex;
+    margin-left: 200px;
 }
 
 .first-app img {
     /* margin-left:500px; */
     max-width: 700px;
+}
+
+.apps {
+    display: flex;
+    justify-content: center;
+    margin-left: 300px;
+    margin-bottom: 30px;
+    padding: 50 50px;
 }
    
 .apps {
