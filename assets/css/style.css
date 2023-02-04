@@ -1,0 +1,328 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --blue: rgb(154, 203, 246);
+    --white: #ffffff;
+    --purple: rgba(219, 124, 226, 0.6);
+}
+
+body {
+    background-color: rgb(245, 240, 234);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* header with name and nav links*/
+header {
+    color: var(--white);
+    background-color: var(--blue);
+    width: 100%;
+}
+
+/*name*/
+h1 {
+    display: inline-flex;
+    font-size: 50px;
+    margin-left: 20px;
+}
+
+/* About Me, My Work, Contact Me links positioning*/
+header nav {
+    float: right;
+    padding-top: 35px;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 25px
+}
+
+/* link list display*/
+header nav ul li {
+    list-style-type: none;
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+/*link styling*/
+nav a {
+    color: var(--white);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/*profile pic and text block*/
+.subheader {
+    position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-image: linear-gradient(to bottom right,var(--blue),var(--purple));
+    background-size: cover;
+}
+
+#profile-pic {
+    /*max-width: 100%;
+    height: auto;*/
+    padding: 15px;
+    margin-left: 10px;
+}
+
+/*profile pic text box positioning*/
+#header-caption {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--blue);
+    color: var(--white);
+    padding-right: 10px;
+}
+
+/*profile pic text block text styling*/
+.subheader p {
+    color: var(--white);
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#about-me {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+h2 {
+    color: var(--purple);
+    font-size: 45px;
+    padding: 25px;
+}
+
+/*vertical line between h2 and p*/
+.about-me-vl {
+    border-left: 6px solid var(--purple);
+    height: 300px;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+} 
+
+.about-me-p {
+    color: var(--purple);
+    font-size: 20px;
+    padding: 20px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+#my-work {
+    display: flex;
+    align-items:flex-start;
+    padding: 50px 50px 0px 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px 50px 50px 50px;
+}
+
+#my-work h2 {
+    margin-top: -700px;
+}
+
+
+.my-work-vl {
+    border-left: 6px solid var(--purple);
+    feature/add-css
+    height: 1500px;
+    margin-left: 55px;
+    /* aligns screenshots */
+    margin-right: -100px;
+}
+
+/* .screenshots {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+} */
+
+.first-app {
+    margin-left: 175px;
+    /* margin-top: -500px; */
+    border: solid 5px var(--blue);
+    height: 1000px;
+    margin-left: 15px;
+}
+
+.first-app {
+    display: flex;
+    margin-left: 200px;
+}
+
+.first-app img {
+    /* margin-left:500px; */
+    max-width: 700px;
+}
+
+.apps {
+    display: flex;
+    justify-content: center;
+    margin-left: 300px;
+    margin-bottom: 30px;
+    padding: 50 50px;
+}
+   
+.apps {
+    /* margin-left: 370px; */
+    /* margin-top: -500px; */
+    /* margin-bottom: 30px; */
+    flex: 4;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+    border: solid 5px var(--blue);
+}
+   
+
+.apps img {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.first-app {
+    position: relative;
+}
+
+.apps {
+    position: relative;
+}
+
+/*Screenshot text boxes*/
+.text-block {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background-color: var(--blue);
+        color: var(--white);
+        padding-left: 10px;
+        padding-right: 10px;
+}
+
+.text-block p {
+    color: var(--purple);
+    font-weight: bold;
+    padding: 5px;
+}
+
+/*Screenshot caption titles in text box*/
+h3 {
+    font-size: 20px;
+    margin: 5px 0 5px;
+    text-align: center;
+}
+
+.first-app p {
+    font-size: 15px;
+    margin: -10px 5px 0px 5px;
+    text-align: right;
+}
+
+.apps p {
+    font-size: 15px;
+    margin: -10px 5px 0px 5px;
+    text-align: right;
+}
+
+#contact-me {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+#contact-me h2 {
+    font-size: 35px;
+}
+
+.contact-me-vl {
+    border-left: 6px solid var(--purple);
+    height: 200px;
+    margin-left: 37px;
+    margin-right: 60px;
+}
+
+#contact-me ul li {
+    list-style-type: none;
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+#contact-me a {
+    color: var(--purple);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.contacts {
+    padding-top: 35px;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 25px
+}
+
+footer {
+    background-color: var(--blue);
+    color: var(--white);
+    text-align: center;
+    width: 100%;
+    height: 50px;
+}
+
+h4 {
+    padding: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .my-work-vl {
+     rotate: 90deg;
+     height: 300px;
+     margin-top: -500px;
+    }
+
+    .about-me-vl {
+        rotate: 90deg;
+        margin-top: 25px;
+        margin-left: -3px;
+    }
+
+    .contact-me-vl {
+        rotate: 90deg;
+        margin-top: 40px;
+        margin-left: -50px;
+    }
+
+
+    #work-title {
+        margin-top: 600px;
+    }
+
+    .first-app {
+        margin-top: -500px;
+        margin-left: 0;
+    }
+
+  } 
+
+/* @media screen and (max-width: 768px) {
+  main {
+        flex-direction:column;
+    }
+  } */
+
