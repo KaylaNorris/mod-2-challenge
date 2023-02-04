@@ -108,7 +108,7 @@ h2 {
     margin-top: 10px;
     margin-left: 40px;
     margin-right: 40px;
-} 
+}
 
 .about-me-p {
     color: var(--purple);
@@ -151,6 +151,14 @@ h2 {
 
 .first-app img {
     max-width: 700px;
+}
+
+.apps {
+    flex: 4;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+    border: solid 5px var(--blue);
 }
    
 .apps {
