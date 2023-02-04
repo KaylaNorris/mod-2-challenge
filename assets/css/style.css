@@ -61,8 +61,6 @@ nav a {
 }
 
 #profile-pic {
-    /*max-width: 100%;
-    height: auto;*/
     padding: 15px;
     margin-left: 10px;
 }
@@ -110,11 +108,7 @@ h2 {
     margin-top: 10px;
     margin-left: 40px;
     margin-right: 40px;
-<<<<<<< HEAD
 }
-=======
-} 
->>>>>>> 388494996ddc5cc40587ec1ecee669fac8f573f2
 
 .about-me-p {
     color: var(--purple);
@@ -136,59 +130,30 @@ h2 {
     margin-top: -700px;
 }
 
+#my-work p {
+    color: var(--purple);
+    margin-left: 25px;
+}
+
 
 .my-work-vl {
     border-left: 6px solid var(--purple);
-<<<<<<< HEAD
-=======
-    feature/add-css
->>>>>>> 388494996ddc5cc40587ec1ecee669fac8f573f2
     height: 1500px;
     margin-left: 55px;
-    /* aligns screenshots */
+    /*aligns screenshots*/
     margin-right: -100px;
-<<<<<<< HEAD
-=======
 }
-
-/* .screenshots {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-} */
 
 .first-app {
     margin-left: 175px;
-    /* margin-top: -500px; */
-    border: solid 5px var(--blue);
-    height: 1000px;
-    margin-left: 15px;
->>>>>>> 388494996ddc5cc40587ec1ecee669fac8f573f2
-}
-
-/* .screenshots {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-} */
-
-.first-app {
-    margin-left: 175px;
-    /* margin-top: -500px; */
     border: solid 5px var(--blue);
 }
 
 .first-app img {
-    /* margin-left:500px; */
     max-width: 700px;
 }
 
 .apps {
-    /* margin-left: 370px; */
-    /* margin-top: -500px; */
-    /* margin-bottom: 30px; */
     flex: 4;
     display: flex;
     flex-wrap: wrap;
@@ -197,10 +162,6 @@ h2 {
 }
    
 .apps {
-    /* margin-left: 370px; */
-    /* margin-top: -500px; */
-    /* margin-bottom: 30px; */
-    flex: 4;
     display: flex;
     flex-wrap: wrap;
     margin: 50px;
@@ -308,23 +269,67 @@ h4 {
     padding: 10px;
 }
 
-@media only screen and (max-width: 1200px) {
-    .my-work-vl {
-     rotate: 90deg;
-     height: 300px;
-     margin-top: -500px;
-    }
-
+/*laptop-l screen*/
+@media screen and (max-width: 1440px) {
     .about-me-vl {
         rotate: 90deg;
-        margin-top: 25px;
-        margin-left: -3px;
+        margin: 30px;
+    }
+
+    .about-me-p {
+        margin-top: -150px;
+    }
+
+    .my-work-vl {
+        height: 300px;
+        margin-top: -500px;
+        rotate: 90deg;
+    }
+
+    #work-title {
+        margin-top: 600px;
+    }
+    
+    .first-app img {
+        max-width: 500px;
+    }
+
+    .apps img {
+        max-width: 200px;
+    }
+
+    .text-block{
+        padding: 0px;
+    }
+
+    .text-block h3 {
+        margin: 2px 0px;
+        
     }
 
     .contact-me-vl {
         rotate: 90deg;
-        margin-top: 40px;
-        margin-left: -50px;
+        height: 300px;
+        margin-top: -5px;
+    }
+
+    .contacts {
+        margin-left: 100px;
+    }
+}
+ 
+/*laptop screen*/
+@media screen and (max-width: 1024px) {
+    .my-work-vl {
+     height: 300px;
+     margin-top: -500px;
+        rotate: 90deg;
+    }
+    
+
+    .about-me-vl {
+        rotate: 90deg;
+        margin-top: 25px;
     }
 
 
@@ -333,15 +338,61 @@ h4 {
     }
 
     .first-app {
-        margin-top: -500px;
-        margin-left: 0;
+        margin-left: 0; 
+        margin-bottom: -100px;
     }
 
+    .apps {
+        margin-left: 300px;
+    }
+
+    .text-block{
+        padding: 0px;
+    }
+
+    .text-block h3 {
+        margin: 2px 0px;
+        
+    }
+
+    .contacts {
+        margin-top: -75px;
+    }
   } 
 
-/* @media screen and (max-width: 768px) {
-  main {
-        flex-direction:column;
+  /*tablet*/
+  @media screen and (max-width: 768px) {
+    .first-app {
+        margin-top: -500px;
     }
-  } */
+
+    .contacts {
+        margin-left: 0px;
+    }
+  }
+
+  /*large mobile*/
+  @media screen and (max-width: 425px) {
+    #about-me {
+        padding: 0px;
+        margin-bottom: 100px;
+    }
+    
+    #my-work {
+        padding: 0px;
+    }
+
+    .first-app img {
+        max-width: 400px;
+    }
+
+    .apps {
+        margin-left: -1px;
+    }
+
+    #contact-me {
+        padding: 0px;
+    }
+  }
+
 
