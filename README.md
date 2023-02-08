@@ -18,7 +18,7 @@ The page has links in the header that will jump to the specified section on the 
 ![Screenshot 3](assets/images/portfolio-screenshot-3.png)
 
 
- https://kaylanorris.github.io/mod-2-challenge/
+ https://kaylanorris.github.io/portfolio/
 
 ## License
 
