@@ -6,11 +6,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 
 <body>
     <header>
-        <h1>Kayla Norris</h1>
+        <h1 class="title is-1 has-text-white">Kayla Norris</h1>
         <nav>
             <ul>
                 <li>
@@ -38,109 +39,126 @@
 
     <!-- main section -->
     <main>
-        <!-- id to link to nav elements class for vertical line-->
-        <div id="about-me">
-            <div class="title">
-                <h2>About<br>Me</h2>
+
+        <section id="about-me" class="section">
+            <h1 class="title is-2 has-text-info">About Me</h1>
+            <h2 class="subtitle has-text-info mt-3">
+                I was born in Germany but raised in Columbus, Ohio (GO BUCKS!).<br>
+                I have a background in Veterinary Technology and Life Insurance Sales. However, I've always had a love
+                for all things Design. I enjoy the complexity of making things flow
+                in a zen-like manner. With my previous background, I've gained meticulous organizational skills as well
+                as genuine
+                interpersonal skills. I am very determined and have a self-directed mindset. I look forward to working
+                with you on future
+                projects!
+            </h2>
+        </section>
+
+        <section id="my-work" class="section">
+            <h1 class="title is-2 has-text-info">My Work</h1>
+        </section>
+        <section class="section ml-5">
+        <div class="tile is-ancestor">
+            <div class="tile is-vertical is-8">
+                <div class="tile">
+                    <div class="tile is-parent is-vertical">
+                        <article class="tile is-child notification is-primary">
+                            <p class="title is-4">Prework Study Guide</p>
+                            <p class="subtitle is-6">HTML, CSS, &JavaScript</p>
+                            <a href=" https://kaylanorris.github.io/prework-study-guide/">
+                                <img src="assets/images/prework-study-guide-screenshot.png"
+                                    alt="Screenshot of Kayla Norris's Prework Study Guide application" class="screenshots">
+                            </a>    
+                        </article>
+                        <article class="tile is-child notification is-warning">
+                            <p class="title is-4">Morning Java</p>
+                            <p class="subtitle is-6">HTML, CSS, JavaScript, &jQuery</p>
+                            <a href="https://kaylanorris.github.io/morning-java/">
+                                <img src="assets/images/morning-java-screenshot.png"
+                                    alt="Screenshot of Morning Java application" class="screenshots">
+                            </a>
+                        </article>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-info">
+                            <p class="title is-4">Code Quiz</p>
+                            <p class="subtitle is-6">HTML, CSS, &JavaScript</p>
+                            <a href="https://kaylanorris.github.io/code-quiz/">
+                                <img src="assets/images/code-quiz-screenshot1.png"
+                                    alt="Screenshot of Kayla Norris's code quiz application" class="screenshots">
+                            </a>
+                            <a href="https://kaylanorris.github.io/code-quiz/">
+                                <img src="assets/images/code-quiz-screenshot2.png"
+                                    alt="Screenshot of Kayla Norris's code quiz application" class="screenshots">
+                            </a>
+                            <a href="https://kaylanorris.github.io/code-quiz/">
+                                <img src="assets/images/code-quiz-screenshot3.png"
+                                    alt="Screenshot of Kayla Norris's code quiz application" class="screenshots">
+                            </a>
+                            <a href="https://kaylanorris.github.io/code-quiz/">
+                                <img src="assets/images/code-quiz-screenshot4.png"
+                                    alt="Screenshot of Kayla Norris's code quiz application" class="screenshots">
+                            </a>
+                        </article>
+                    </div>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child notification is-danger">
+                        <p class="title">Bio Page</p>
+                            <p class="subtitle">First Web App (HTML &CSS)</p>
+                            <a href="https://kaylanorris.github.io/bio-page/">
+                                <img src="assets/images/bio-page-screenshot.png"
+                                    alt="Screenshot of Kayla Norris's bio page application" class="screenshots">
+                            </a>
+                    </article>
+                </div>
             </div>
-            <!--purple vertical line-->
-            <div class="about-me-vl"></div>
-            <div class="about-me-p">
-                <p>
-                    I was born in Germany but raised in Columbus, Ohio (GO BUCKS!).<br>
-                    I have a background in Veterinary Technology and Life Insurance Sales.<br>
-                    However, I've always had a love for all things Design. I enjoy the complexity of making things flow
-                    in a zen-like manner.<br>
-                    With my previous background, I've gained meticulous organizational skills as well as genuine
-                    interpersonal skills.<br>
-                    I am very determined and have a self-directed mindset. I look forward to working with you on future
-                    projects!
-                </p>
+            <div class="tile is-parent">
+                <article class="tile is-child notification is-success">
+                    <div class="content">
+                        <p class="title is-4">Wall Pilates</p>
+                        <p class="subtitle is-6">HTML &CSS</p>
+                        <a href="https://kaylanorris.github.io/wall-pilates/">
+                            <img src="assets/images/wall-pilates-screenshot.png"
+                                alt="Screenshot of Kayla Norris's Wall Pilates application" class="screenshots">
+                        </a>
+                        <p class="title is-4 mt-5">CSS Cheatsheet</p>
+                        <p class="subtitle is-6">CSS</p>
+                        <a href="https://kaylanorris.github.io/css-cheatsheet/">
+                            <img src="assets/images/css-cheatsheet-screenshot.png"
+                                alt="Screenshot of Kayla Norris's CSS Cheatsheet application">
+                        </a>
+                        <p class="title is-4 mt-5">Code Refactor</p>
+                        <p class="subtitle is-6">HTML &CSS Refactor</p>
+                        <a href="https://kaylanorris.github.io/mod-1-challenge/">
+                            <img src="assets/images/mod-1-challenge-screenshot.png"
+                                alt="Screenshot of Kayla Norris's Module 1 Challenge application" class="screenshots">
+                        </a>
+                        <p class="title is-4 mt-5">Work Scheduler</p>
+                        <p class="subtitle is-6">HTML, CSS, &JavaScript</p>
+                        <a href="https://kaylanorris.github.io/work-scheduler/">
+                            <img src="assets/images/work-scheduler-screenshot.png"
+                                alt="Screenshot of Kayla Norris's work scheduler application" class="screenshots">
+                        </a>
+                        <p class="title is-4 mt-5">Password Generator</p>
+                        <p class="subtitle is-6">HTML, CSS, &JavaScript</p>
+                        <a href="https://kaylanorris.github.io/password-generator/">
+                            <img src="assets/images/password-generator-screenshot.png"
+                                alt="Screenshot of Kayla Norris's password generator application" class="screenshots">
+                        </a>
+                    </div>
+                </article>
             </div>
         </div>
+        </section>
 
-        <!-- id to link nav elements -->
-        <div id="my-work">
-            <div id="work-title">
-                <h2>My<br>Work</h2>
-                <p>click the image<br>to go to site</p>
-            </div>
-            <!--purple vertical line-->
-            <div class="my-work-vl"></div>
-            <!-- larger than the rest first div class for  -->
-            <div class="first-app">
-                <a href="https://kaylanorris.github.io/morning-java/">
-                    <img src="assets/images/morning-java-screenshot.png"
-                        alt="Screenshot of Morning Java application" class="screenshots">
-                </a>
-                <div class="text-block">
-                    <h3>Morning Java</h3>
-                    <p>HTML, CSS, JavaScript, &jQuery</p>
-                </div>
-            </div>
-
-            <!-- smaller than first app -->
-            <div class="screenshots">
-                <div class="apps">
-                    <a href="https://kaylanorris.github.io/bio-page/">
-                        <img src="assets/images/bio-page-screenshot.png"
-                            alt="Screenshot of Kayla Norris's bio page application" class="screenshots">
-                    </a>
-                    <div class="text-block">
-                        <h3>Bio Page</h3>
-                        <p>First Web App (HTML &CSS)</p>
-                    </div>
-                </div>
-                <div class="apps">
-                    <a href=" https://kaylanorris.github.io/prework-study-guide/">
-                        <img src="assets/images/prework-study-guide-screenshot.png"
-                            alt="Screenshot of Kayla Norris's Prework Study Guide application" class="screenshots">
-                    </a>
-                    <div class="text-block">
-                        <h3>Prework Study Guide</h3>
-                        <p>HTML, CSS, &JavaScript</p>
-                    </div>
-                </div>
-                <div class="apps">
-                    <a href="https://kaylanorris.github.io/wall-pilates/">
-                        <img src="assets/images/wall-pilates-screenshot.png"
-                            alt="Screenshot of Kayla Norris's Wall Pilates application" class="screenshots">
-                    </a>
-                    <div class="text-block">
-                        <h3>Wall Pilates</h3>
-                        <p>HTML &CSS</p>
-                    </div>
-                </div>
-                <div class="apps">
-                    <a href="https://kaylanorris.github.io/mod-1-challenge/">
-                        <img src="assets/images/mod-1-challenge-screenshot.png"
-                            alt="Screenshot of Kayla Norris's Module 1 Challenge application" class="screenshots">
-                    </a>
-                    <div class="text-block">
-                        <h3>Module 1 Challenge</h3>
-                        <p>HTML &CSS Refactor</p>
-                    </div>
-                </div>
-                <div class="apps">
-                    <a href="https://kaylanorris.github.io/css-cheatsheet/">
-                        <img src="assets/images/css-cheatsheet-screenshot.png"
-                            alt="Screenshot of Kayla Norris's CSS Cheatsheet application">
-                    </a>
-                    <div class="text-block">
-                        <h3>CSS Cheatsheet</h3>
-                        <p>CSS</p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- id to link to nav elements -->
-        <div id="contact-me">
-            <div class="title">
-                <h2>Contact<br>Me</h2>
+        <section id="contact-me" class="section">
+            <div>
+                <h2 class="title is-2 has-text-info">Contact Me</h2>
             </div>
-            <div class="contact-me-vl"></div>
-            <div class="contacts">
+            <div class="contacts mt-1">
                 <ul>
                     <li>
                         <a href="tel:6143124711">614-312-4711</a>
@@ -156,7 +174,7 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>

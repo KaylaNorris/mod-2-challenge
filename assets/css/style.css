@@ -2,13 +2,13 @@
     box-sizing: border-box;
 }
 :root {
-    --blue: rgb(154, 203, 246);
+    --blue: hsl(204, 86%, 53%);
     --white: #ffffff;
     --purple: rgba(219, 124, 226, 0.6);
 }
 
 body {
-    background-color: rgb(245, 240, 234);
+    background-color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -96,7 +96,7 @@ main {
 }
 
 h2 {
-    color: var(--purple);
+    color: var(--blue);
     font-size: 45px;
     padding: 25px;
 }
@@ -245,7 +245,7 @@ h3 {
 }
 
 #contact-me a {
-    color: var(--purple);
+    color: var(--blue);
     font-size: 20px;
     text-decoration: none;
 }
